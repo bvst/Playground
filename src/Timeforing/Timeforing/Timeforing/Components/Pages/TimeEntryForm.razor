@@ -1,0 +1,92 @@
+﻿@page "/time-entry-form"
+@using Microsoft.EntityFrameworkCore
+@using Timeforing.DbAccess
+@using Timeforing.Model
+@inject AppDbContext Db
+@rendermode InteractiveServer
+
+<h1>Registrer Timer</h1>
+<input @bind="entry.Employee" placeholder="Ansattnavn" />
+<input type="date" @bind="entry.Date" />
+<input type="number" @bind="entry.Hours" placeholder="Timer" />
+<input @bind="entry.Project" placeholder="Prosjekt" />
+<input @bind="entry.Description" placeholder="Beskrivelse" />
+<button @onclick="Save">Lagre</button>
+@if (showConfirmation)
+{
+    <p style="color: green;">Lagret!</p>
+}
+
+<h2>Registrerte Timer</h2>
+@if (entries.Count == 0)
+{
+    <p>Ingen registreringer ennå.</p>
+}
+else
+{
+    <ul>
+        @foreach (var e in entries)
+        {
+            <li>@e.Employee - @e.Date.ToShortDateString() - @e.Hours t - @e.Project - @e.Description</li>
+        }
+    </ul>
+}
+
+<a class="btn btn-outline-primary" href="/export/csv" target="_blank">Last ned CSV</a>
+<button @onclick="ExportToTripletex">Eksporter til Tripletex</button>
+
+@code {
+    private TimeEntry entry = new()
+    {
+        Date = DateTime.Today
+    };
+    private bool showConfirmation;
+    private List<TimeEntry> entries = new();
+    
+    protected override async Task OnInitializedAsync()
+    {
+        entries = await Db.TimeEntries.ToListAsync();
+    }
+
+    private async Task Save()
+    {
+        Console.WriteLine("Save ble kalt!");
+
+        Db.TimeEntries.Add(entry);
+        await Db.SaveChangesAsync();
+
+        Console.WriteLine($"Lagret: {entry.Employee}, {entry.Date}, {entry.Hours}t");
+
+        entry = new() { Date = DateTime.Today };
+        showConfirmation = true;
+
+        entries = await Db.TimeEntries.ToListAsync();
+    }
+    
+    private async Task ExportToTripletex()
+    {
+        var client = new HttpClient();
+
+        // Eksempel på Tripletex auth (du trenger å lagre dette sikkert!)
+        client.DefaultRequestHeaders.Add("Authorization", "Basic din-auth-her");
+
+        var timeposter = entries.Select(e => new
+        {
+            date = e.Date.ToString("yyyy-MM-dd"),
+            hours = e.Hours,
+            description = e.Description,
+            employeeId = 12345, // må mappes!
+            projectId = 67890   // må mappes!
+        });
+
+        foreach (var post in timeposter)
+        {
+            var response = await client.PostAsJsonAsync("https://tripletex.no/v2/projectHours", post);
+            if (!response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Feil ved eksport: " + response.StatusCode);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\bin\Debug\net9.0\Timeforing.DbAccess.deps.json
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\bin\Debug\net9.0\Timeforing.DbAccess.dll
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\bin\Debug\net9.0\Timeforing.DbAccess.pdb
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\bin\Debug\net9.0\Timeforing.DomainModel.dll
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\bin\Debug\net9.0\Timeforing.DomainModel.pdb
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\Timeforing.DbAccess.csproj.AssemblyReference.cache
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\Timeforing.DbAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\Timeforing.DbAccess.AssemblyInfoInputs.cache
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\Timeforing.DbAccess.AssemblyInfo.cs
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\Timeforing.DbAccess.csproj.CoreCompileInputs.cache
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\Timeforing.DbAccess.sourcelink.json
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\Timefori.EA2F9DFB.Up2Date
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\Timeforing.DbAccess.dll
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\refint\Timeforing.DbAccess.dll
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\Timeforing.DbAccess.pdb
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DbAccess\obj\Debug\net9.0\ref\Timeforing.DbAccess.dll

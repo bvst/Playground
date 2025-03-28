@@ -1,0 +1,12 @@
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\bin\Debug\net9.0\Timeforing.DomainModel.deps.json
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\bin\Debug\net9.0\Timeforing.DomainModel.dll
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\bin\Debug\net9.0\Timeforing.DomainModel.pdb
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\obj\Debug\net9.0\Timeforing.DomainModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\obj\Debug\net9.0\Timeforing.DomainModel.AssemblyInfoInputs.cache
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\obj\Debug\net9.0\Timeforing.DomainModel.AssemblyInfo.cs
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\obj\Debug\net9.0\Timeforing.DomainModel.csproj.CoreCompileInputs.cache
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\obj\Debug\net9.0\Timeforing.DomainModel.sourcelink.json
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\obj\Debug\net9.0\Timeforing.DomainModel.dll
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\obj\Debug\net9.0\refint\Timeforing.DomainModel.dll
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\obj\Debug\net9.0\Timeforing.DomainModel.pdb
+C:\git\Playground\src\Timeforing\Timeforing\Timeforing.DomainModel\obj\Debug\net9.0\ref\Timeforing.DomainModel.dll

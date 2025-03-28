@@ -1,0 +1,6 @@
+﻿services:
+  timeforing:
+    image: timeforing
+    build:
+      context: .
+      dockerfile: Timeforing/Dockerfile
